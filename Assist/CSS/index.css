@@ -77,14 +77,24 @@
 }
 .navbar a{
       /* border: 2px solid rgb(29, 6, 131); */
-      width: 150px;
-      padding: 5px 0;
+      /* min-width: 200px; */
+      padding: 5px  9px;
       text-align: center;
       color: white;
       font-weight: bold;
       text-decoration: none;
       margin: 3px 0;
-      
+      transition: all .5s ;
+}
+.navbar a:hover{
+     background-color: white;
+     /* border: 1px solid black; */
+     color: #df3740;
+}
+@media (max-width: 1049px) {
+    .navbar a{
+          border: 1px solid black;
+    }
 }
 /* =====================silding banner================== */
 .slider_box{
@@ -138,3 +148,55 @@
   .active{
     transform: translateX(0);
   }
+/* ----------------------about--------------------- */
+.about_box{
+      width: 100vw;
+      height: auto;
+      /* border: 2px solid rgb(4, 0, 255); */
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 80px 0;
+}
+.about_box > div{
+      /* border: 5px solid olivedrab; */
+      max-width: 660px;
+      min-width: 280px;
+      height: auto;
+      margin: 15px;
+      padding: 10px;
+}
+.about_box .about_box1 img{
+      width: 100%;
+}
+/* ---------------------more about----------------- */
+.container{
+     /* border: 2px solid red; */
+     width: 100vw;
+     height: auto;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin: 80px 0;
+}
+.container > div{
+    max-width: 660px;
+    min-width: 280px;
+     /* border: 2px solid blue; */
+     margin: 10px 10px;
+     padding: 10px;
+     background-color: rgb(245, 244, 244);
+}
+.container p{
+      text-align: center;
+      margin-top: 20px;
+}
+.container a{
+       font-weight: bold;
+       color: gray;
+       
+
+}
+.container a:hover{
+       color: #df3740;
+}
