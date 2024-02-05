@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <title>Document</title>
+ <link rel="stylesheet" href="./Assist/CSS/index.css"/>
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+</style>
+<body> 
+  <!-- -------------top navbar----------------------------------- -->
+ <div id="topbar" class="d-flex ">
+  <div class="container-fluid">
+      <div>
+         <p style="font-size: 14px;"><i class="fa-solid fa-phone"></i> 9415380793</p>
+      </div>
+      
+      <div class="login_box">
+              <i class="fa-solid fa-lock" style="color: #df3740;"></i> <a  style="color: rgb(239, 238, 238); font-size: 14px;" class="twitter" href="#">Login</a>
+      </div>
+  </div>
+</div>
+ <!-- =============================top nav end----------------------------- -->
+ <!-- -----------------------------icon and regestration box--------------------------- -->
+   
+    <div class="icon_box">
+          <div class="logo_box">
+              <a href="#"><img src="./Assist/img/Logo.png" alt="" class="logo_img" /></a>
+         </div>
+    
+        <div class="regestration_box">
+        <a href="#" class="twitter" style="color: white;">Registration</a>  
+
+        </div>
+    </div>
+ <!-- ------------------------------ -icon and regestration box end=======================-->
+ <!-- ------------------------------navbar ------------------------------------------ -->
+ <div class="navbar">
+        
+  <a class="navlink a1"  href="#" >HOME</a>
+  <a class="navlink a2"  href="#" >ABOUT US</a>
+  <a class="navlink a3"  href="#">Member List</a>
+  <a class="navlink a4"  href="#">Sahayog</a>
+  <a class="navlink a5"  href="#">Sahayog List</a>
+  <a class="navlink a6"  href="#">Vyavastha List</a>
+  <!-- <a class="navlink a7"  href="#"></a> -->
+  <a class="navlink a8"  href="#">CONTACT</a>
+
+</div>
+<!-- -------------------------navbar end---------------------------- -->
+<!-- ===============================sliding hero banner------------------ -->
+<div class="slider_box">
+ <div class="img_box" id="img_silde">
+     <div class="slid active" id="slid"><img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"/></div>
+     <div class="slid" id="slid"><img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"/></div>
+     <div class="slid" id="slid"><img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"/></div>
+     <div class="slid active" id="slid"><img src="https://images.unsplash.com/photo-1593720213681-e9a8778330a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"/></div>
+     <div class="slid" id="slid"><img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"/></div>
+   
+    </div>
+ <div class="btn"> 
+     <button class="back_btn" id="back">back</button>
+     <button class="next_btn" id="next">next</button>
+ </div>
+</div>
+<!-- ------------------------------sliding hero banner end----------------------- -->
+</body>
+<script>
+   
+   var back = document.querySelector("#back");
+      var next = document.getElementById("next");
+      var src = document.querySelector(".img_box");
+      var slide  = document.querySelectorAll(".slid");
+      
+      // console.log(back)
+      // console.log(next)
+      // console.log(srcol_box)
+      // console.log(slide)
+      let ind = 0;
+      slide[ind].classList.add('active');
+       // ==================next slide ========function===========
+      next.addEventListener("click", function(){
+           slide[ind].classList.remove('active');
+           // console.log(slide.length-1)
+           // console.log(ind);
+           ind = (ind == slide.length - 1) ? 0 : ind+1;
+           slide[ind].classList.add('active');
+           src.style.transform = `translateX(-${ind * 100}%)`;
+           
+      })
+      // ==================back slide =============functions =================
+      back.addEventListener('click', function(){
+           slide[ind].classList.remove('active');
+           // console.log(slide.length-1)
+           // console.log(ind);
+           ind = (ind == 0) ? slide.length - 1 : ind- 1;
+           slide[ind].classList.add('active');
+           src.style.transform = `translateX(-${ind * 100}%)`;
+           
+      });
+</script>
+</html>
