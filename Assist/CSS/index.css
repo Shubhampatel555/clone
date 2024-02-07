@@ -156,7 +156,7 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      margin: 80px 0;
+      margin: 40px 0;
 }
 .about_box > div{
       /* border: 5px solid olivedrab; */
@@ -200,3 +200,70 @@
 .container a:hover{
        color: #df3740;
 }
+/* ----------------------doner box----------- */
+.donation_box{
+       width: 100vw;
+       height: auto;
+       text-align: center;
+       /* border: 7px solid rgb(0, 255, 0); */
+}
+.donation_box h1{
+        margin: 20px 0;
+        color: gray;
+}
+.donation_box .doner_box{
+       width: 90%;
+       height: auto;
+       /* background-color: red; */
+       margin: auto;
+       padding: 5px;
+       margin-top: 20px;
+       border: 1px solid gray;
+       border-radius: 20px 0;
+}
+.donation_box .doner_box .img_box{
+      max-width: 360px;
+      min-width: 160px;
+        height: 290px;
+        background-color: yellowgreen;
+        margin: auto;
+}
+.donation_box .doner_box .img_box img{
+       width: 100%;
+       height: 100%;
+}
+.donation_box .doner_box .doner_detal{
+      max-width: 760px;
+      min-width: 160px;
+        height: auto;
+        /* background-color:#df3740 ; */
+        margin: auto;
+
+}
+.donation_box .doner_box .doner_detal .d_text{
+      color: gray;
+
+}
+/* ----------------info box--------------- */
+.info_box{
+      /* border: 1px solid rgb(70, 70, 70); */
+      width: 100vw;
+      margin: 10px 0;
+}
+.info_box div{
+       /* border: 2px solid green; */
+       width: 100%;
+       height: auto;
+       border-bottom: 1px solid gray;
+       padding: 10px 10px;
+}
+.info_box div h3,p{
+       text-align: center;
+       color: rgb(85, 85, 85);
+}
+.info_box div h3{
+       color: #df3740;
+}
+
+/* -------------footer-------------- */
+
