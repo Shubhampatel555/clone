@@ -14,7 +14,7 @@
     padding: 4px 50px;
 }
  .twitter{
-     background-color: #df3740;
+     background-color:teal;
      padding: 2px 9px;
      border-radius: 7px 0;
      border: 1px solid gray;
@@ -68,7 +68,7 @@
 
  /* ===========================navbar =================== */
 .navbar{
-       background-color: #df3740;
+       background-color: teal;
        width: 100vw;
        display: flex;
        justify-content: space-around;
@@ -80,7 +80,7 @@
       /* min-width: 200px; */
       padding: 5px  9px;
       text-align: center;
-      color: white;
+      color: rgb(237, 235, 235);
       font-weight: bold;
       text-decoration: none;
       margin: 3px 0;
@@ -89,11 +89,11 @@
 .navbar a:hover{
      background-color: white;
      /* border: 1px solid black; */
-     color: #df3740;
+     color: teal;
 }
 @media (max-width: 1049px) {
     .navbar a{
-          border: 1px solid black;
+          border: 1px solid rgb(66, 65, 65);
     }
 }
 /* =====================silding banner================== */
@@ -134,15 +134,17 @@
      padding: 0 10px;
   }
   .btn button{
+    
       height: 35px;
       width: 35px;
-      border-radius: 4px 0;
-      background-color: #df3740;
+      background-color: teal;
       color: white;
       border: none;
-      border: 2px solid gray;
-
+      border: 1px solid gray;
+     /* border-radius: 30px; */
+      border-radius: 20px;
   }
+ 
 
 
   .active{
@@ -198,7 +200,7 @@
 
 }
 .container a:hover{
-       color: #df3740;
+       color: teal;
 }
 /* ----------------------doner box----------- */
 .donation_box{
@@ -236,7 +238,7 @@
       max-width: 760px;
       min-width: 160px;
         height: auto;
-        /* background-color:#df3740 ; */
+        /* background-color:teal ; */
         margin: auto;
 
 }
@@ -262,8 +264,32 @@
        color: rgb(85, 85, 85);
 }
 .info_box div h3{
-       color: #df3740;
+       color: teal;
 }
 
 /* -------------footer-------------- */
-
+.footer{
+       border: 2px solid red;
+       width: 100vw;
+       height: auto;
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       background-color:teal;
+       margin-top: 20px;
+}
+.footer div{
+      margin: 25px 0;
+      max-width: 760px;
+      min-width: 160px;
+      /* border: 2px solid red; */
+      padding: 10px;
+      color: rgb(253, 253, 253);
+}
+.footer div h1{
+       margin: 9px 0 ;
+}
+.footer div ul li{
+       margin: 8px  0;
+       list-style: none;
+}
