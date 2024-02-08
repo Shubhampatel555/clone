@@ -187,6 +187,7 @@ input {
 
 form .input-box input:focus {
     border: 1px solid greenyellow;
+    background-color: gainsboro;
 }
 
 form .input-box select:focus {
