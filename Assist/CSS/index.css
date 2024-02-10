@@ -266,4 +266,27 @@
 }
 
 /* -------------footer-------------- */
-
+.footer{
+       border: 2px solid red;
+       width: 100vw;
+       height: auto;
+       display: flex;
+       justify-content: space-around;
+       background-color:#df3740;
+       margin-top: 20px;
+}
+.footer div{
+      margin: 15px 0;
+      max-width: 760px;
+      min-width: 160px;
+      border: 2px solid red;
+      padding: 10px;
+      color: rgb(253, 253, 253);
+}
+.footer div h1{
+       margin: 9px 0 ;
+}
+.footer div ul li{
+       margin: 8px  0;
+       list-style: none;
+}
