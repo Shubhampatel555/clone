@@ -27,17 +27,7 @@
 }
  /* ================================= TABLE HEADING END ============================================== */
  
- /* --------------------------------- TABLE START ------------------------------------------------ */
- table,
- th,
- td {
-    width: 91vw;
-    margin-left: 4%;
-    font-size: 1.1em;
- }
 
-  /* ================================= TABLE END =================================================*/
- 
  
  /* --------------------------------- BUTTON START -------------------------------------------------- */
  
@@ -84,11 +74,11 @@
       font-size: .8em;
       margin-top: 9%;
    }
-   table tr td:nth-child(n+2) {
-      display: none;
+   table tr td {
+      /* font-size: 1em; */
   }
-  table tr th:nth-child(n+2) {
-   display: none;
+  table tr th{
+   /* display: none; */
 }
 
 .div_button{
@@ -133,11 +123,11 @@
    float: none;
    margin-top: 4%;
 }
-table tr td:nth-child(n+3) {
-   display: none;
+table tr th {
+  font-size: .6em;
 }
-table tr th:nth-child(n+3) {
-display: none;
+table tr td {
+   font-size: .6em;
 }
 
 /* ================================= TABLE HEADING END ============================================== */
