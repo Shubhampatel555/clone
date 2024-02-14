@@ -149,18 +149,42 @@
  }
  
  /* ================================= TABLE HEADING END ============================================== */
- 
- /* --------------------------------- TABLE START ------------------------------------------------ */
- .tabl{
-    border: 2px solid red;
-    height: 200px;
+
+  /* --------------------------------- TABLE START ------------------------------------------------ */
+ .scrollable-table-container {
+   width: 83vw; /* Set width for the container */
+   height: 400px; /* Set height for the container */
+   overflow: auto; /* Enable both horizontal and vertical scrolling */
+   border: 1px solid #ccc; /* Add border for visual clarity */
+   margin-left: 8%;
+   margin-top: 1%;
  }
+
+ table {
+   width: 100%; /* Make table width 100% of its container */
+   border-collapse: collapse; /* Collapse table borders */
+ }
+
+ th, td {
+   padding: 8px;
+   border: 1px solid #ddd; /* Add border to cells */
+   text-align: left; /* Align text to the left */
+ }
+
+ th {
+   background-color: #f2f2f2; /* Light gray background for table header */
+ }
+
+ tr:hover {
+   background-color: #c5bdbd; /* Light gray background on hover */
+ }
+ 
+
+
+
  table,
- th,
  td {
     width: 83vw;
-    margin-left: 8%;
-    margin-top: 1%;
      border: 1px solid black;
      border-collapse: collapse;
      padding: 8px;
